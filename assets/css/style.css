@@ -1,0 +1,35 @@
+/* HEADER */
+.container{
+    background-color: #ffc017;
+}
+.maxWidth{
+    max-width: 50rem;
+    margin-inline: auto;
+}
+.navbar{
+    border-bottom: 1px solid black;
+}
+header div nav{
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+header div nav ul{
+    list-style-type: none;
+}
+header div nav ul li{
+    display: inline-block;
+    padding: 0.5rem 0.8rem;
+}
+.flex{
+    display: flex;
+}
+.getstarted, #startReading{
+    background-color: #191919;
+    color: #FFFFFF;
+    border-radius: 100px;
+    border: none
+}
+#startReading{
+    padding: 0.5rem 0.8rem;
+}
