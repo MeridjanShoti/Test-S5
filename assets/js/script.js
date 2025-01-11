@@ -1,5 +1,5 @@
 addEventListener("scroll",(event) => {
-    if (scrollY >= 348.73){
+    if (scrollY >= 353.86){
     document.querySelector(".navbar").classList.add("changeColor");
     }
     else{
@@ -7,19 +7,19 @@ addEventListener("scroll",(event) => {
     }
 })
 
-let svg = document.querySelector('svg');
+let svg = document.querySelector('.svg svg');
 
 //seleziono tutti gli elementi g che hanno l'attributo opacity
 
 let arrayGroup = [...svg.querySelectorAll('g[opacity]')]
 
 function randomOpacity(){
-    let index = Math.floor(Math.random()*arrayGroup.length)
+    let index = Math.floor(Math.random()*arrayGroup.length+1)
     let gruppo = arrayGroup[index]
 
     gruppo.setAttribute('opacity', 0)
-    setInterval(()=>{
+    setTimeout(()=>{
         gruppo.setAttribute('opacity', 1)
-    }, 1000)    
+    }, 2000)
 }
 setInterval(randomOpacity, 100)
