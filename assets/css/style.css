@@ -21,7 +21,7 @@ hr{
     background-color: #ffc017;
 }
 .maxWidth{
-    max-width: 60rem;
+    max-width: 70rem;
     margin-inline: auto;
 }
 .navbar{
@@ -60,13 +60,7 @@ header div nav ul li{
 #startReading:hover{
     cursor: pointer;
 }
-/* .mBackground{
-    background-image: url(../imgs/svg/M.svg);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    
-} */
+
  .hero {
     min-width: 50%;
     flex-direction: column;
@@ -91,7 +85,10 @@ header h2{
 .narrow{
     max-width: 60%;
 }
-
+/* .svg{
+    width: 50rem;
+    height: 50rem;
+} */
 /* MAIN */
 
 .trending h3{
@@ -247,6 +244,24 @@ footer ul{
     }
     .trendingContainer{
         width: 45%;
+    }
+    aside{
+        order: -1;
+        width: unset;
+        margin-inline: auto;
+    }
+    article{
+        width: unset;
+    }
+    article .contentBig .content {
+        width: 50%;
+    }
+    article .contentBig>img{
+        max-width: 40%;
+        align-self: flex-end;
+    }
+    .artaside{
+        flex-direction: column;
     }
 }
 @media screen and (max-width: 576px) {
