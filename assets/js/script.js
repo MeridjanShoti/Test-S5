@@ -20,6 +20,6 @@ function randomOpacity(){
     gruppo.setAttribute('opacity', 0)
     setInterval(()=>{
         gruppo.setAttribute('opacity', 1)
-    }, 100)    
+    }, 1000)    
 }
 setInterval(randomOpacity, 100)
