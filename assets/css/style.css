@@ -30,6 +30,7 @@ hr{
     width: 100vw;
     padding: 1rem;
     z-index: 100;
+    transition: background-color 2s ease;
 }
 
 header div nav{
@@ -51,7 +52,8 @@ header div nav ul li{
     background-color: #191919;
     color: #FFFFFF;
     border-radius: 100px;
-    border: none
+    border: none;
+    transition: background-color 2s ease;
 }
 #startReading{
     padding: 0.5rem 0.8rem;
@@ -85,10 +87,9 @@ header h2{
 .narrow{
     max-width: 60%;
 }
-/* .svg{
-    width: 50rem;
-    height: 50rem;
-} */
+.svg svg{
+    
+}
 /* MAIN */
 
 .trending h3{
@@ -182,14 +183,11 @@ article .user img{
 .contentBig .caption::after{
     content: url(../imgs/svg/star.svg);
 }
-article .content{
-position: relative;
-}
-article .content::after{
+.bookmark::after{
     content: url(../imgs/svg/bookmark.svg);
-    position: absolute;
-    bottom: 0;
-    right: 0;
+}
+.bookmark{
+    justify-content: space-between;
 }
 /* ASIDE */
 aside{
@@ -226,11 +224,9 @@ footer ul{
 }
 .changeColor{
     background-color: white;
-    transition: 2s;
 }
 .changeColor .getstarted {
     background-color: #1a8917;
-    transition: 2s;
 }
 /* MEDIA QUERY */
 @media screen and (max-width: 900px) {
