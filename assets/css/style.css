@@ -10,7 +10,8 @@ a:hover{
     cursor: pointer;
 }
 html{
-    font-family: "Roboto", sans-serif
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
 }
 hr{
     border: #E9E6E3 solid 1px;
@@ -54,29 +55,41 @@ header div nav ul li{
 }
 #startReading{
     padding: 0.5rem 0.8rem;
+    text-wrap: nowrap;
 }
 #startReading:hover{
     cursor: pointer;
 }
-.mBackground{
+/* .mBackground{
     background-image: url(../imgs/svg/M.svg);
     background-repeat: no-repeat;
     background-position: right;
-}
+    background-size: contain;
+    
+} */
+ .hero {
+    min-width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+ }
 .container.mBackground{
-    padding:7rem 6rem 4rem 6rem;
+    /* padding:7rem 6rem 4rem 6rem; */
+    overflow: hidden;
+    justify-content: space-between;
 }
 header h1{
     font-family: "Spectral", serif;
     font-size: 5rem;
     font-weight: 500;
+    text-wrap: nowrap;
 }
 header h2{
     margin-top: 3rem;
     margin-bottom: 3rem
 }
 .narrow{
-    max-width: 38%;
+    max-width: 60%;
 }
 
 /* MAIN */
@@ -107,7 +120,7 @@ margin-bottom: 1rem;
     flex-direction: column;
     gap: 0.8rem;
     justify-content: flex-start;
-    font-size: 0.8rem;
+    
 }
 .user{
     justify-content: flex-start;
@@ -214,10 +227,33 @@ footer{
 footer ul{
     gap: 1em;
 }
-/* MEDIA QUERY */
-@media screen and (max-width:) {
-    
-}
 .changeColor{
     background-color: white;
+    transition: 2s;
+}
+.changeColor .getstarted {
+    background-color: #1a8917;
+    transition: 2s;
+}
+/* MEDIA QUERY */
+@media screen and (max-width: 900px) {
+    .maxWidth{
+        margin-inline: 66px;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav a:not(.mainItem){
+        display: none;
+    }
+    .trendingContainer{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 576px) {
+    nav a:not(:last-child){
+        display: none;
+    }
+    .trendingContainer{
+        width: 100%;
+    }
 }
