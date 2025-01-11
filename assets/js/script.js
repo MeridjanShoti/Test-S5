@@ -1,5 +1,5 @@
 addEventListener("scroll",(event) => {
-    if (scrollY >= 527){
+    if (scrollY >= 348.73){
     document.querySelector(".navbar").classList.add("changeColor");
     }
     else{
@@ -7,14 +7,22 @@ addEventListener("scroll",(event) => {
     }
 })
 
-let m = document.querySelectorAll('g[transform^="matrix"]')
-console.log(m)
-setInterval(function (){
-let i = 0;
-if (m[i].opacity === 0){
-m[i].opacity = 1}
-else{
-    m[i].opacity = 0
+let svg = document.querySelector('svg');
+let qualcosaltro = Array.from(svg.querySelectorAll('g[opacity]'))
+
+/* console.log(qualcosaltro)
+qualcosaltro.forEach(a=>{
+    a.setAttribute('opacity', 0)
+    console.log(a)
+    
+}) */
+function randomOpacity(){
+    let index = Math.floor(Math.random()*qualcosaltro.length)
+    let gruppo = qualcosaltro[index]
+
+    gruppo.setAttribute('opacity', 0)
+    setInterval(()=>{
+        gruppo.setAttribute('opacity', 1)
+    }, 100)    
 }
-i++
-}, 1000)
+setInterval(randomOpacity, 100)
