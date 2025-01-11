@@ -64,7 +64,6 @@ header div nav ul li{
 }
 
  .hero {
-    min-width: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -73,6 +72,9 @@ header div nav ul li{
     /* padding:7rem 6rem 4rem 6rem; */
     overflow: hidden;
     justify-content: space-between;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
+    position: relative;
 }
 header h1{
     font-family: "Spectral", serif;
@@ -87,9 +89,14 @@ header h2{
 .narrow{
     max-width: 60%;
 }
-.svg svg{
+.svg{
+    position: absolute;
+    right: 0;
+    top: 40px;
     
+    width: 31rem;
 }
+
 /* MAIN */
 
 .trending h3{
@@ -192,6 +199,10 @@ article .user img{
 /* ASIDE */
 aside{
     width: 40%;
+    position: sticky;
+    height: 100%;
+    top: 52.17px;
+    background-color: white;
 }
 aside h3 {
     font-weight: 900;
@@ -248,6 +259,8 @@ footer ul{
     }
     article{
         width: unset;
+        
+        
     }
     article .contentBig .content {
         width: 50%;
@@ -258,6 +271,10 @@ footer ul{
     }
     .artaside{
         flex-direction: column;
+        position: relative;
+    }
+    .svg{
+        display: none;
     }
 }
 @media screen and (max-width: 576px) {
