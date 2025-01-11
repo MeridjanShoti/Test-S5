@@ -246,6 +246,9 @@ footer ul{
     .maxWidth:not(nav){
         margin-inline: 66px;
     }
+    .navbar {
+        padding-inline: 66px;
+    }
 }
 @media screen and (max-width: 768px) {
     nav a:not(.mainItem){
