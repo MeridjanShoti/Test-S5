@@ -8,17 +8,14 @@ addEventListener("scroll",(event) => {
 })
 
 let svg = document.querySelector('svg');
-let qualcosaltro = Array.from(svg.querySelectorAll('g[opacity]'))
 
-/* console.log(qualcosaltro)
-qualcosaltro.forEach(a=>{
-    a.setAttribute('opacity', 0)
-    console.log(a)
-    
-}) */
+//seleziono tutti gli elementi g che hanno l'attributo opacity
+
+let arrayGroup = [...svg.querySelectorAll('g[opacity]')]
+
 function randomOpacity(){
-    let index = Math.floor(Math.random()*qualcosaltro.length)
-    let gruppo = qualcosaltro[index]
+    let index = Math.floor(Math.random()*arrayGroup.length)
+    let gruppo = arrayGroup[index]
 
     gruppo.setAttribute('opacity', 0)
     setInterval(()=>{
