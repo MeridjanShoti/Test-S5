@@ -1,4 +1,13 @@
-/* GENERALI */
+/* NOTA IMPORTANTE PER IL PROF:
+Ho riscontrato alcune incongruenze tra i vari mockup e il video, quindi ho cercato di tenere le cose in modo che a mio gusto risultassero più esteticamente accettabili.
+Esempio:
+Nella navbar del mockup ad immagini la versione tablet aveva ancora tutte le opzioni del menu, mentre alla versione mobile restavano solo sign in e get started.
+Nella versione del video invece nella versione tablet c'erano sign in e get started, mentre nella versione mobile solo get started.
+
+C'erano inoltre differenze nella la spaziatura della parte della data sotto le varie card tra il mockup desktop e quello del dettaglio della navbar.
+Ho preferito quello del dettaglio della navbar.
+
+GENERALI */
 *, *::before,*::after{
     box-sizing: border-box;
 }
@@ -69,7 +78,6 @@ header div nav ul li{
     align-items: flex-start;
  }
 .container.mBackground{
-    /* padding:7rem 6rem 4rem 6rem; */
     overflow: hidden;
     justify-content: space-between;
     padding-bottom: 3rem;
@@ -243,7 +251,8 @@ footer ul{
 .changeColor .getstarted {
     background-color: #1a8917;
 }
-/* MEDIA QUERY */
+/* MEDIA QUERY 
+La dimensione a 1032 non era esplicitamente richiesta ma l'ho usata per evitare che il contenuto uscisse senza spazio laterale */
 @media screen and (max-width: 1032px) {
     .maxWidth:not(nav){
         margin-inline: 66px;
