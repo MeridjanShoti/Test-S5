@@ -168,10 +168,12 @@ article .articleTitle{
 }
 .contentBig{
     gap: 1em;
+    align-items: flex-start;
 }
 .contentBig>img{
 max-width: 30%;
 object-fit:contain;
+margin-top: 1.5rem;
 }
 .paragraph{
     color: #757575;
@@ -275,7 +277,6 @@ footer ul{
     }
     article .contentBig>img{
         max-width: 40%;
-        align-self: flex-end;
     }
     .artaside{
         flex-direction: column;
