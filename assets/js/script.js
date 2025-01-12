@@ -14,7 +14,7 @@ let svg = document.querySelector('.svg svg');
 let arrayGroup = [...svg.querySelectorAll('g[opacity]')]
 
 function randomOpacity(){
-    let index = Math.floor(Math.random()*arrayGroup.length+1)
+    let index = Math.floor(Math.random()*arrayGroup.length)
     let gruppo = arrayGroup[index]
 
     gruppo.setAttribute('opacity', 0)
